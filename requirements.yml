@@ -1,0 +1,4 @@
+# system-update
+- src: https://github.com/ttych/ansible_role_system-update.git
+  version: master
+  name: system-update
