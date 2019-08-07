@@ -2,3 +2,19 @@
 - src: https://github.com/ttych/ansible_role_system-update.git
   version: master
   name: system-update
+
+- src: https://github.com/ttych/ansible_role_dotfiles.git
+  version: master
+  name: dotfiles
+
+- src: https://github.com/ttych/ansible_role_base_system.git
+  version: master
+  name: base_system
+
+- src: https://github.com/ttych/ansible_role_packages.git
+  version: master
+  name: packages
+
+# - src: https://github.com/ttych/ansible_role_zaton_users.git
+#   version: master
+#   name: zaton_users
