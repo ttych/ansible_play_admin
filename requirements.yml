@@ -15,6 +15,19 @@
   version: master
   name: packages
 
-# - src: https://github.com/ttych/ansible_role_zaton_users.git
-#   version: master
-#   name: zaton_users
+- src: git@github.com:ttych/ansible_role_zaton_users.git
+  scm: git
+  version: master
+  name: zaton_users
+
+- src: https://github.com/ttych/ansible_role_zdata.git
+  version: master
+  name: zdata
+
+- src: https://github.com/ttych/ansible_role_zshare.git
+  version: master
+  name: zshare
+
+- src: https://github.com/ttych/ansible_role_efibootmgr-hack.git
+  version: master
+  name: efibootmgr-hack

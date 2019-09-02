@@ -1,0 +1,5 @@
+---
+- hosts: all
+  remote_user: admin
+  roles:
+    - { role: system-update, become: yes }

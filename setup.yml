@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: admin
+  roles:
+    - { role: base_system, become: yes }
+    - { role: system-update, become: yes }
+    - { role: zaton_users, become: yes }
+    - { role: packages, become: yes }
+    - { role: dotfiles, become: yes }
+    - { role: zdata, become: yes }
+    - { role: zshare, become: yes }
