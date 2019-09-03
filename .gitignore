@@ -1,2 +1,9 @@
+/*.retry
+
+/*_test.yml
+
 /roles/*
 !/roles/.keep
+
+/inventory/*
+/inventories/*
