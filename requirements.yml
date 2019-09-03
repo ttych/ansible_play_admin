@@ -31,3 +31,15 @@
 - src: https://github.com/ttych/ansible_role_efibootmgr-hack.git
   version: master
   name: efibootmgr-hack
+
+- src: https://github.com/ttych/ansible_role_services.git
+  version: master
+  name: services
+
+- src: https://github.com/ttych/ansible_role_daemontools.git
+  version: master
+  name: daemontools
+
+- src: https://github.com/ttych/ansible_role_dhcpd.git
+  version: master
+  name: dhcpd

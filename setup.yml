@@ -9,3 +9,5 @@
     - { role: dotfiles, become: yes }
     - { role: zdata, become: yes }
     - { role: zshare, become: yes }
+    - { role: services, become: yes }
+    - { role: daemontools, become: yes }
