@@ -1,6 +1,6 @@
 ---
-- hosts: all
-  remote_user: admin
+- name: setup
+  hosts: all
   roles:
     - { role: base_system, become: yes }
     - { role: system-update, become: yes }
