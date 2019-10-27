@@ -2,12 +2,25 @@
 - name: setup
   hosts: all
   roles:
-    - { role: base_system, become: yes }
-    - { role: system-update, become: yes }
-    - { role: zaton_users, become: yes }
+    - { role: linux-system-base, become: yes }
+    - { role: linux-system-update, become: yes }
+    - { role: system-users, become: yes }
     - { role: packages, become: yes }
+    - { role: tychensky-users, become: yes }
     - { role: dotfiles, become: yes }
-    - { role: zdata, become: yes }
-    - { role: zshare, become: yes }
-    - { role: services, become: yes }
-    - { role: daemontools, become: yes }
+    - { role: zfs-customs, become: yes }
+    - { role: autofs, become: yes }
+    - { role: grub, become: yes }
+
+    # ntpd
+
+    # - { role: daemontools, become: yes }
+
+    # antivirus
+    # DHCP
+    # DNS
+
+
+
+    - { role: X, become: yes }
+    - { role: clean-install, become: yes }
