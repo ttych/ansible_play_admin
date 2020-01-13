@@ -2,25 +2,22 @@
 - name: setup
   hosts: all
   roles:
-    - { role: linux-system-base, become: yes }
-    - { role: linux-system-update, become: yes }
-    - { role: system-users, become: yes }
-    - { role: packages, become: yes }
+    - { role: system-base, become: yes }
+    - { role: FreeBSD-update, become: yes }
+    - { role: Linux-update, become: yes }
     - { role: tychensky-users, become: yes }
     - { role: dotfiles, become: yes }
+    - { role: zfs-settings, become: yes }
     - { role: zfs-customs, become: yes }
-    - { role: autofs, become: yes }
-    - { role: grub, become: yes }
+    # - { role: network, become: yes }
+    # - { role: autofs, become: yes }
+    # - { role: grub, become: yes }
+    # - { role: ntp, become: yes }
+    - { role: daemontools, become: yes }
+    # - { role: clamav, become: yes }
 
-    # ntpd
+    # # DHCP
+    # # DNS
 
-    # - { role: daemontools, become: yes }
-
-    # antivirus
-    # DHCP
-    # DNS
-
-
-
-    - { role: X, become: yes }
-    - { role: clean-install, become: yes }
+    # - { role: X, become: yes }
+    # - { role: clean-install, become: yes }

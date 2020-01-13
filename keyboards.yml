@@ -1,0 +1,5 @@
+---
+- name: keyboards
+  hosts: all
+  roles:
+    - { role: keyboards }
