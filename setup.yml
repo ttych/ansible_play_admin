@@ -9,11 +9,16 @@
     - { role: dotfiles, become: yes }
     - { role: zfs-settings, become: yes }
     - { role: zfs-customs, become: yes }
+
     # - { role: network, become: yes }
     # - { role: ntp, become: yes }
+
     - { role: pf, become: yes }
     - { role: daemontools, become: yes }
+    - { role: sshd, become: yes }
+    - { role: knockd, become: yes }
     - { role: clamav, become: yes }
+
     # - { role: autofs, become: yes }
 
     # # DHCP
