@@ -11,16 +11,15 @@
     - { role: zfs-customs, become: yes }
 
     # - { role: network, become: yes }
-    # - { role: ntp, become: yes }
-
+    
+    - { role: ntpd, become: yes }
+    - { role: automounter, become: yes }
     - { role: pf, become: yes }
     - { role: services, become: yes }
     - { role: daemontools, become: yes }
     - { role: sshd, become: yes }
     - { role: knockd, become: yes }
     - { role: clamav, become: yes }
-
-    # - { role: autofs, become: yes }
 
     # # DHCP
     # # DNS
