@@ -9,9 +9,7 @@
     - { role: dotfiles, become: yes }
     - { role: zfs-settings, become: yes }
     - { role: zfs-customs, become: yes }
-
-    # - { role: network, become: yes }
-    
+    - { role: network, become: yes }
     - { role: ntpd, become: yes }
     - { role: automounter, become: yes }
     - { role: pf, become: yes }
@@ -20,9 +18,7 @@
     - { role: sshd, become: yes }
     - { role: knockd, become: yes }
     - { role: clamav, become: yes }
-
-    # # DHCP
-    # # DNS
-
-    # - { role: X, become: yes }
-    # - { role: clean-install, become: yes }
+    - { role: dhcpd, become: yes }
+    # - { role: dns, become: yes }
+    - { role: X, become: yes }
+    - { role: clean, become: yes }
