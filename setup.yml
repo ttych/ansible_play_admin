@@ -20,5 +20,6 @@
     - { role: clamav, become: yes }
     - { role: dhcpd, become: yes }
     # - { role: dns, become: yes }
+    - { role: db, become: yes }
     - { role: X, become: yes }
     - { role: clean, become: yes }
