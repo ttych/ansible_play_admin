@@ -14,6 +14,7 @@
     - { role: automounter, become: yes }
     - { role: pf, become: yes }
     - { role: services, become: yes }
+    - { role: runit, become: yes }
     - { role: daemontools, become: yes }
     - { role: sshd, become: yes }
     - { role: knockd, become: yes }
