@@ -9,6 +9,7 @@
     - { role: dotfiles, become: yes }
     - { role: zfs-settings, become: yes }
     - { role: zfs-customs, become: yes }
+    - { role: freebsd-temperature, become: yes }
     - { role: network, become: yes }
     - { role: ntpd, become: yes }
     - { role: automounter, become: yes }
