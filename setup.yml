@@ -25,6 +25,7 @@
     - { role: db, become: yes }
     - { role: jenkins, become: yes }
     - { role: easy-rsa, become: yes }
+    - { role: gitlab, become: yes }
     - { role: X, become: yes }
     - { role: developer, become: yes }
     - { role: clean, become: yes }
