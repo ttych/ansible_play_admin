@@ -20,11 +20,13 @@
     - { role: sshd, become: yes }
     - { role: knockd, become: yes }
     - { role: clamav, become: yes }
+    - { role: easy-rsa, become: yes }
     - { role: dhcpd, become: yes }
     - { role: dns, become: yes }
     - { role: db, become: yes }
+    - { role: mail, become: yes }
+    - { role: nginx, become: yes }
     - { role: jenkins, become: yes }
-    - { role: easy-rsa, become: yes }
     - { role: gitlab, become: yes }
     - { role: X, become: yes }
     - { role: developer, become: yes }
