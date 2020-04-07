@@ -26,6 +26,7 @@
     - { role: db, become: yes }
     - { role: mail, become: yes }
     - { role: nginx, become: yes }
+    - { role: elastic, become: yes }
     - { role: jenkins, become: yes }
     - { role: gitlab, become: yes }
     - { role: X, become: yes }
