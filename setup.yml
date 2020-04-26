@@ -31,4 +31,5 @@
     - { role: gitlab, become: yes }
     - { role: X, become: yes }
     - { role: developer, become: yes }
+    - { role: pi, become: yes }
     - { role: clean, become: yes }
