@@ -1,11 +1,15 @@
 ---
+- src: git+https://gitlab.com/ttych/ansible_role_system-base.git
+  version: master
+  name: system-base
+
+- src: git+https://gitlab.com/ttych/ansible_role_freebsd-update.git
+  version: master
+  name: FreeBSD-update
+
 - src: git+https://gitlab.com/ttych/ansible_role_linux-system-update.git
   version: master
-  name: linux-system-update
-
-- src: git+https://gitlab.com/ttych/ansible_role_linux-system-base.git
-  version: master
-  name: linux-system-base
+  name: Linux-update
 
 - src: git+https://gitlab.com/ttych/ansible_role_tychensky-users.git
   version: master
@@ -31,6 +35,10 @@
   version: master
   name: grub
 
+- src: git+https://gitlab.com/ttych/ansible_role_network.git
+  version: master
+  name: network
+
 - src: git+https://gitlab.com/ttych/ansible_role_autofs.git
   version: master
   name: autofs
@@ -47,6 +55,9 @@
   version: master
   name: clean-install
 
+- src: git+https://gitlab.com/ttych/ansible_role_keyboards.git
+  version: master
+  name: keyboards
 
 # - src: git+https://github.com/ttych/ansible_role_efibootmgr-hack.git
 #   version: master
@@ -67,3 +78,7 @@
 # - src: git+https://github.com/ttych/ansible_role_network.git
 #   version: master
 #   name: network
+
+- src: git+https://gitlab.com:ttych/ansible_role_FreeBSD.git
+  version: master
+  name: FreeBSD

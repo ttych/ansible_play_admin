@@ -3,13 +3,13 @@
   hosts: all
   roles:
     - { role: system-base, become: yes }
+    - { role: FreeBSD, become: yes }
     - { role: FreeBSD-update, become: yes }
     - { role: Linux-update, become: yes }
     - { role: tychensky-users, become: yes }
     - { role: dotfiles, become: yes }
     - { role: zfs-settings, become: yes }
     - { role: zfs-customs, become: yes }
-    - { role: freebsd-temperature, become: yes }
     - { role: network, become: yes }
     - { role: ntpd, become: yes }
     - { role: automounter, become: yes }
@@ -26,6 +26,7 @@
     - { role: db, become: yes }
     - { role: mail, become: yes }
     - { role: nginx, become: yes }
+    - { role: redis_simple, become: yes }
     - { role: elastic, become: yes }
     - { role: jenkins, become: yes }
     - { role: gitlab, become: yes }
